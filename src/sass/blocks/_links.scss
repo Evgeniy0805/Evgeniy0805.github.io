@@ -1,0 +1,36 @@
+.links {
+    position: fixed;
+    width: 338px;
+    top: 50%;
+    left: -110px;
+    z-index: 1;
+    transform: rotate(-90deg) translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation-name: leftPanel;
+    animation-duration: 1s;
+    &__text {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &__divider {
+        width: 70px;
+        height: 0px;
+        border: 1px solid #000000;
+    }
+    &__social {
+        width: 20px;
+        height: 20px;
+        &:hover {
+            svg {
+                transition: all .3s;
+                transform: rotate(90deg) scale(1.2);
+            }
+            svg path {
+                fill: $main-color;
+            }
+        }
+    }
+}

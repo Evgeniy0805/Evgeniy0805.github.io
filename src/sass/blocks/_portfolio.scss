@@ -1,0 +1,20 @@
+.portfolio {
+    padding-top: 120px;
+    &__main-title {
+        text-align: center;
+        &::before {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template: repeat(2, 280px) / repeat(4, 280px);
+        gap: 5px;
+        margin-top: 60px;
+        justify-content: center;
+    }
+}

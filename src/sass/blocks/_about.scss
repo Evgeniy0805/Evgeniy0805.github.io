@@ -1,0 +1,53 @@
+.about {
+    padding-top: 120px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        grid-template-rows: repeat(1fr);
+        column-gap: 70px;
+        row-gap: 40px;
+    }
+    &__photo {
+        width: 100%;
+        height: 600px;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        object-fit: cover;
+        object-position: right;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        &_fz12 {
+            font-size: 12px;
+        }
+    }
+    &__skills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 20px;
+        column-gap: 50px;
+    }
+    &__skill {
+        display: grid;
+        grid-template-columns: 37px 1fr;
+        column-gap: 20px;
+    }
+    &__icon {
+        position: relative;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        @include round;
+        &::before {
+            top: 0;
+        }
+        img {
+            width: 25px;
+            height: 25px;
+            margin-top: 14px;
+            margin-left: 12px;
+        }
+    }
+}

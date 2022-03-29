@@ -1,0 +1,24 @@
+.title {
+    position: relative;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    &_fz16 {
+        padding-left: 12px;
+        font-size: 16px;
+        line-height: 24px;
+        @include round;
+    }
+    &_fz20 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    &_fz36 {
+        font-size: 36px;
+        line-height: 60px;
+    }
+    &_fz48 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+}

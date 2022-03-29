@@ -1,0 +1,90 @@
+.expirience {
+	padding-top: 120px;
+	&__main-title {
+		padding: 0;
+		text-align: center;
+		&::before {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	&__subtitle {
+		text-align: center;
+	}
+	&__divider {
+		margin-top: 25px;
+	}
+	&__title {
+		padding-left: 43px;
+		position: relative;
+		&::before {
+			content: '';
+			background-color: $main-color;
+			width: 15px;
+			height: 15px;
+			border-radius: 100%;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0;
+		}
+	}
+	//Grid
+	&__wrapper  {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 135px;
+		margin-top: 60px;
+	}
+	justify-content: center;
+	&__item {
+		list-style-type: none;
+		position: relative;
+		&::before {
+			content: '';
+			width: 1px;
+			height: calc(100% + 8px);
+			background-color: #000;
+			position: absolute;
+			left: 7px;
+			top: -8px;
+		}
+		&-subtitle {
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 18px;
+		}
+		&-head {
+			position: relative;
+			padding-left: 99px;
+			padding-top: 45px;
+			&::before {
+				content: '';
+				width: 37px;
+				height: 1px;
+				background-color: #000;
+				position: absolute;
+				left: 8px;
+				top: 60px;
+			}
+		}
+		&-body {
+			margin-top: 12px;
+			padding-left: 43px;
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 18px;
+		}
+	}
+	&__icons {
+		position: absolute;
+		top: 50px;
+		left: 45px;
+		@include round;
+		img {
+			position: relative;
+			left: 14px;
+			top: 5px;
+		}
+	}
+}

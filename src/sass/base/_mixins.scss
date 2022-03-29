@@ -1,0 +1,13 @@
+@mixin round {
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -6px;
+        z-index: -1;
+        width: 34px;
+        height: 34px;
+        background-color: $main-color;
+        border-radius: 100%;
+    }
+}

@@ -1,0 +1,10 @@
+@keyframes leftPanel {
+    0% {
+        transform: rotate(-90deg) translateX(150px) translateY(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(-90deg) translateY(-50%);
+        opacity: 1;
+    }
+}

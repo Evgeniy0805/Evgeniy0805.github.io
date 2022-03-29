@@ -1,0 +1,26 @@
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: $main-color;
+    font-weight: 700;
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    &_header {
+        width: 135px;
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0, .2);
+        }
+        &:active {
+            transform: translateY(-1px);
+        }
+    }
+    &_contacts {
+        border: none;
+        font-weight: bold;
+        font-size: 14px;
+    }
+}
